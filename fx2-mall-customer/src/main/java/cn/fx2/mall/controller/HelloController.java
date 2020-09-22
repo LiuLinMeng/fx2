@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @Reference
     private HelloService helloService;
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0.0",check = false)
     private StoreService storeService;
 
     @GetMapping("/sayHello")
