@@ -10,9 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.fx2</groupId>
-    <artifactId>fx2-api</artifactId>
+    <artifactId>fx2-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>fx2-api</name>
+    <name>fx2-common</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
@@ -20,15 +20,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.fx2</groupId>
-            <artifactId>fx2-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -50,4 +48,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

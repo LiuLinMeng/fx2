@@ -23,6 +23,7 @@
         <module>fx2-order-provider</module>
         <module>fx2-mall-customer</module>
         <module>fx2-store-provider</module>
+        <module>fx2-common</module>
     </modules>
     <dependencies>
         <dependency>
