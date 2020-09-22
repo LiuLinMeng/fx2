@@ -10,30 +10,51 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.fx2</groupId>
-    <artifactId>fx2</artifactId>
-    <name>springboot-dubbo-demo</name>
+    <artifactId>fx2-third-provider</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>fx2-third-provider</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
     <properties>
         <java.version>1.8</java.version>
+        <zookeeper.version>3.4.13</zookeeper.version>
+        <dubbo.version>0.2.0</dubbo.version>
     </properties>
-    <modules>
-        <module>fx2-api</module>
-        <module>fx2-order-provider</module>
-        <module>fx2-mall-customer</module>
-        <module>fx2-store-provider</module>
-        <module>fx2-common</module>
-        <module>fx2-activity-provider</module>
-        <module>fx2-account-provider</module>
-        <module>fx2-third-provider</module>
-    </modules>
+
     <dependencies>
+
+        <dependency>
+            <groupId>cn.fx2</groupId>
+            <artifactId>fx2-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${zookeeper.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
