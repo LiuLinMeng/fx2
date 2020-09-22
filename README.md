@@ -14,3 +14,5 @@ fx2-order-provider 订单提供者(订单业务逻辑)
 fx2-store-provider 商户提供者(商户业务逻辑)
 
 fx2-activity-provider 营销活动提供者(活动业务逻辑)
+
+fx2-account-provider 账号/用户提供者(账号和用户业务逻辑)
