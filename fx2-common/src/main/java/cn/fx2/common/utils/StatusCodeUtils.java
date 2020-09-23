@@ -10,7 +10,8 @@ public enum StatusCodeUtils {
     SELECT_FAIL(10006,"查询失败"),
     REQUEST_PARAMETER_EXCEPTION(10007,"请求参数异常"),
     TOKEN_VERIFY_FAIL(10008,"token验证失败"),
-    SIGN_VERIFY_FAIL(10009,"签名验证失败");
+    SIGN_VERIFY_FAIL(10009,"签名验证失败"),
+    UNKNOWN_ERROR(10010,"未知错误");
 
     private final int code;
     private final String msg;
