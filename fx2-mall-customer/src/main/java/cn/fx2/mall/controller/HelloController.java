@@ -1,5 +1,6 @@
 package cn.fx2.mall.controller;
 
+import cn.fx2.api.service.AccountService;
 import cn.fx2.api.service.HelloService;
 import cn.fx2.api.service.StoreService;
 import com.alibaba.dubbo.config.annotation.Reference;
@@ -12,6 +13,8 @@ public class HelloController {
     private HelloService helloService;
     @Reference(version = "1.0.0",check = false)
     private StoreService storeService;
+    @Reference(version = "1.0.0",check = false)
+    private AccountService accountService;
 
     @GetMapping("/sayHello")
     private String sayHello(){
@@ -24,5 +27,10 @@ public class HelloController {
     @GetMapping("/storeHello")
     private String storeHello() {
         return storeService.list();
+    }
+
+    @GetMapping("/accountHello")
+    private String accountHello() {
+        return accountService.accountHello();
     }
 }
