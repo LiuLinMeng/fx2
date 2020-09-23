@@ -26,7 +26,11 @@ public class HelloController {
 
     @GetMapping("/storeHello")
     private String storeHello() {
-        return storeService.list();
+        try {
+            return storeService.list();
+        } catch (Exception e) {
+            return "错误了";
+        }
     }
 
     @GetMapping("/accountHello")
