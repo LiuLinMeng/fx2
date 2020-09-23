@@ -3,6 +3,7 @@ package cn.fx2.mall.controller;
 import cn.fx2.api.service.AccountService;
 import cn.fx2.api.service.HelloService;
 import cn.fx2.api.service.StoreService;
+import cn.fx2.common.utils.log.Fx2Log;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,12 +16,10 @@ public class HelloController {
     private StoreService storeService;
     @Reference(version = "1.0.0",check = false)
     private AccountService accountService;
+    private static final Fx2Log log = new Fx2Log(HelloController.class);
 
     @GetMapping("/sayHello")
     private String sayHello(){
-
-        System.out.println("调用sayHello成功了..." + " name:");
-
         return helloService.sayHello();
     }
 
@@ -35,6 +34,7 @@ public class HelloController {
 
     @GetMapping("/accountHello")
     private String accountHello() {
+        log.info("调用了accountHello");
         return accountService.accountHello();
     }
 }
