@@ -11,7 +11,7 @@
     </parent>
     <groupId>cn.fx2</groupId>
     <artifactId>fx2</artifactId>
-    <name>springboot-dubbo-demo</name>
+    <name>fx2</name>
     <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
