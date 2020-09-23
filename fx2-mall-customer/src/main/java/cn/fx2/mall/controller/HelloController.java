@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @Reference
+    @Reference(version = "1.0.0",check = false)
     private HelloService helloService;
     @Reference(version = "1.0.0",check = false)
     private StoreService storeService;
