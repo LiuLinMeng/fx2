@@ -3,6 +3,7 @@ package cn.fx2.mall.controller;
 import cn.fx2.api.service.AccountService;
 import cn.fx2.api.service.HelloService;
 import cn.fx2.api.service.StoreService;
+import cn.fx2.common.utils.JsonResponseUtils;
 import cn.fx2.common.utils.StatusCodeUtils;
 import cn.fx2.common.utils.log.Fx2Log;
 import com.alibaba.dubbo.config.annotation.Reference;
@@ -37,5 +38,10 @@ public class HelloController {
     private String accountHello() {
         log.info("调用了accountHello");
         return accountService.accountHello();
+    }
+
+    @GetMapping("/accountHello1")
+    private JsonResponseUtils accountHello1() {
+        return accountService.getOne();
     }
 }
