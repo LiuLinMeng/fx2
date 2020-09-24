@@ -11,7 +11,8 @@ public enum StatusCodeUtils {
     REQUEST_PARAMETER_EXCEPTION(10007,"请求参数异常"),
     TOKEN_VERIFY_FAIL(10008,"token验证失败"),
     SIGN_VERIFY_FAIL(10009,"签名验证失败"),
-    UNKNOWN_ERROR(10010,"未知错误");
+    UNKNOWN_ERROR(10010,"未知错误"),
+    SERVICE_NOT_AVAILABLE(10011,"服务不可用");
 
     private final int code;
     private final String msg;

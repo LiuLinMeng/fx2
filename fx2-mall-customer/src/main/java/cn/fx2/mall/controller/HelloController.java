@@ -3,6 +3,7 @@ package cn.fx2.mall.controller;
 import cn.fx2.api.service.AccountService;
 import cn.fx2.api.service.HelloService;
 import cn.fx2.api.service.StoreService;
+import cn.fx2.common.utils.StatusCodeUtils;
 import cn.fx2.common.utils.log.Fx2Log;
 import com.alibaba.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +29,7 @@ public class HelloController {
         try {
             return storeService.list();
         } catch (Exception e) {
-            return "错误了";
+            return StatusCodeUtils.SERVICE_NOT_AVAILABLE.getMsg();
         }
     }
 
