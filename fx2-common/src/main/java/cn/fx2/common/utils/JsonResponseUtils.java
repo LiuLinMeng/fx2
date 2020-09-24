@@ -33,19 +33,19 @@ public class JsonResponseUtils implements Serializable {
         this.data = data;
     }
 
-    public static JsonResponseUtils ok(String msg) {
+    public static JsonResponseUtils success(String msg) {
         return new JsonResponseUtils(msg);
     }
 
-    public static JsonResponseUtils ok(String msg,Object data) {
+    public static JsonResponseUtils success(String msg,Object data) {
         return new JsonResponseUtils(StatusCodeUtils.SUCCESS.getCode(),msg,data);
     }
 
-    public static JsonResponseUtils ok(int code,String msg,Object data) {
+    public static JsonResponseUtils success(int code,String msg,Object data) {
         return new JsonResponseUtils(code,msg,data);
     }
 
-    public static JsonResponseUtils ok(int code,String msg) {
+    public static JsonResponseUtils success(int code,String msg) {
         return new JsonResponseUtils(code,msg);
     }
 
