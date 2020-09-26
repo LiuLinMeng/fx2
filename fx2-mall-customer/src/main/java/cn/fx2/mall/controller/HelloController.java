@@ -28,7 +28,6 @@ public class HelloController {
     @GetMapping("/storeHello")
     private String storeHello() {
         try {
-            log.info("你好");
             return storeService.list();
         } catch (Exception e) {
             return StatusCodeUtils.SERVICE_NOT_AVAILABLE.getMsg();
