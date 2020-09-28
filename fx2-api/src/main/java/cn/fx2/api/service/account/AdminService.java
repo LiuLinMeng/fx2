@@ -1,7 +1,7 @@
 package cn.fx2.api.service.account;
 
+import cn.fx2.common.form.account.LoginForm;
 import cn.fx2.common.utils.JsonResponseUtils;
-import cn.fx2.database.form.account.LoginForm;
 
 public interface AdminService {
     JsonResponseUtils login(String username,String password); //登录

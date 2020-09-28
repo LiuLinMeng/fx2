@@ -20,6 +20,6 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public JsonResponseUtils getOne() {
-        return JsonResponseUtils.success("成功",adminDao.getOne());
+        return JsonResponseUtils.success("成功",adminDao.getUsernameInfo("admin"));
     }
 }
