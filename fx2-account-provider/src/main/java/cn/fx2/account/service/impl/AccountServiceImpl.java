@@ -20,7 +20,6 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public JsonResponseUtils getOne() {
-        System.out.println(adminDao.getOne());
         return JsonResponseUtils.success("成功",adminDao.getOne());
     }
 }
