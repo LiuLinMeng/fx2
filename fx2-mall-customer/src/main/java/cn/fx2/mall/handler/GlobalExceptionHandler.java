@@ -32,7 +32,7 @@ public class GlobalExceptionHandler {
 
 	@ExceptionHandler(value = BindException.class)
 	public Object BindExceptionHandler(BindException exception) {
-//		log.error(getE(exception));
+		log.error(getE(exception));
 		return JsonResponseUtils.error(StatusCodeUtils.PARAMS_NULL.getCode(),exception.getBindingResult().getFieldErrors().get(0).getDefaultMessage());
 	}
 
