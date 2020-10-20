@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fx2-mall-customer" />
+        <module name="fx2-third-provider" />
+        <module name="fx2-account-provider" />
+        <module name="fx2-common" />
+        <module name="fx2-activity-provider" />
+        <module name="fx2-api" />
+        <module name="fx2-store-provider" />
+        <module name="fx2-database" />
+        <module name="fx2-stat-finance-provider" />
+        <module name="fx2-order-provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fx2" target="1.8" />
+      <module name="fx2-account-provider" target="1.8" />
+      <module name="fx2-activity-provider" target="1.8" />
+      <module name="fx2-api" target="1.8" />
+      <module name="fx2-common" target="1.8" />
+      <module name="fx2-database" target="1.8" />
+      <module name="fx2-mall-customer" target="1.8" />
+      <module name="fx2-order-provider" target="1.8" />
+      <module name="fx2-stat-finance-provider" target="1.8" />
+      <module name="fx2-store-provider" target="1.8" />
+      <module name="fx2-third-provider" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fx2-account-provider" options="-parameters" />
+      <module name="fx2-activity-provider" options="-parameters" />
+      <module name="fx2-api" options="-parameters" />
+      <module name="fx2-common" options="-parameters" />
+      <module name="fx2-database" options="-parameters" />
+      <module name="fx2-mall-customer" options="-parameters" />
+      <module name="fx2-order-provider" options="-parameters" />
+      <module name="fx2-stat-finance-provider" options="-parameters" />
+      <module name="fx2-store-provider" options="-parameters" />
+      <module name="fx2-third-provider" options="-parameters" />
+    </option>
+  </component>
+</project>

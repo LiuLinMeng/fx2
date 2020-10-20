@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/fx2-account-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-activity-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-database/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-mall-customer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-order-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-stat-finance-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-store-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fx2-third-provider/src/main/java" charset="UTF-8" />
+  </component>
+</project>

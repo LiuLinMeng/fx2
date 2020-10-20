@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fx2.iml" filepath="$PROJECT_DIR$/fx2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-account-provider/fx2-account-provider.iml" filepath="$PROJECT_DIR$/fx2-account-provider/fx2-account-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-activity-provider/fx2-activity-provider.iml" filepath="$PROJECT_DIR$/fx2-activity-provider/fx2-activity-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-api/fx2-api.iml" filepath="$PROJECT_DIR$/fx2-api/fx2-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-common/fx2-common.iml" filepath="$PROJECT_DIR$/fx2-common/fx2-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-database/fx2-database.iml" filepath="$PROJECT_DIR$/fx2-database/fx2-database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-mall-customer/fx2-mall-customer.iml" filepath="$PROJECT_DIR$/fx2-mall-customer/fx2-mall-customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-order-provider/fx2-order-provider.iml" filepath="$PROJECT_DIR$/fx2-order-provider/fx2-order-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-stat-finance-provider/fx2-stat-finance-provider.iml" filepath="$PROJECT_DIR$/fx2-stat-finance-provider/fx2-stat-finance-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-store-provider/fx2-store-provider.iml" filepath="$PROJECT_DIR$/fx2-store-provider/fx2-store-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx2-third-provider/fx2-third-provider.iml" filepath="$PROJECT_DIR$/fx2-third-provider/fx2-third-provider.iml" />
+    </modules>
+  </component>
+</project>
